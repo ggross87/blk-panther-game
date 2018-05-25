@@ -20,7 +20,7 @@ $(".theme-button").on("click", function() {
 });
 
 // Pause Button
-$("pause-button").on("click", function() {
+$(".pause-button").on("click", function() {
   audioElement.pause();
 });
 
@@ -51,7 +51,7 @@ $(".vis-button").on("click", function() {
 });
 
 // Make Invisible
-$("invis-button").on("click", function() {
+$(".invis-button").on("click", function() {
   $(".blk-panther").animate({ opacity: "0.05"});
 });
 
@@ -83,6 +83,39 @@ $(".back-button").on("click", function() {
   $(".blk-panther").animate({ top: "50px", left: "80px"},"fast");
 });
 
-//
+// Move Events for Keyboard Presses
+// ================================
+
+// Keyboard
+$(document).keyup(function(e) {
+  switch (e.which) {
+    case 38:
+    $(".blk-panther").animate({ top: "-=200px"}, "normal");
+  }
+});
+
+// Keyboard
+$(document).keyup(function(e) {
+  switch (e.which) {
+    case 40:
+    $(".blk-panther").animate({ top: "+=200px"}, "normal");
+  }
+});
+
+// Keyboard
+$(document).keyup(function(e) {
+  switch (e.which) {
+    case 37:
+    $(".blk-panther").animate({ left: "-=200px"}, "normal");
+  }
+});
+
+// Keyboard
+$(document).keyup(function(e) {
+  switch (e.which) {
+    case 39:
+    $(".blk-panther").animate({ left: "+=200px"}, "normal");
+  }
+});
 
 });
