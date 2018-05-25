@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>BLK Panther Game!</title>
+
+    <!-- Bootstrap File -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+  <!--Bootstrap container that holds everything. -->
+  <div class="container">
+
+    <!--Jumbotron holds the title section. -->
+    <div class="jumbotron">
+      <h1 class="text-center"><strong>BLK Panther: The Game!</strong></h1>
+      <h4 class="text-center">Rated M for Mature</h4>
+      <hr>
+      <div class="text-center">
+        <button class="btn btn-warning btn-xs theme-button"><span class="glyphicon glyphicon-music"></span> Play Theme!</button>
+        <button class="btn btn-default btn-xs pause-button"><span class="glyphicon glyphicon-pause"></span> Pause Song</button>
+      </div>
+    </div>
+
+    <!--Overall row that contains the content. -->
+    <div class="row">
+
+      <!--Left panel. -->
+      <div class="col-lg-6">
+
+        <!--Controls (Superpowers Grow/Shrink)-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title"> Superpowers - Change Sizes!</h3>
+          </div>
+          <div class="panel-body">
+            <div class="text-center">
+              <button class="btn btn-default btn-lg normal-button"><span class="glyphicon glyphicon-ok-sign"></span> Normal</button>
+              <button class="btn btn-primary btn-lg grow-button"><span class="glyphicon glyphicon-plus-sign"></span> Grow</button>
+              <button class="btn btn-danger btn-lg shrink-button"><span class="glyphicon glyphicon-minus-sign"></span> Shrink</button>            </div>
+          </div>
+        </div>
+
+        <!-- Controls (Superpower Visibility)-->
+        <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Superpowers - Invisibility!</h3>
+            </div>
+            <div class="panel-body">
+              <div class="text-center">
+                <button class="btn btn-default btn-lg vis-button"><span class="glyphicon glyphicon-eye-open"></span> Visible</button>
+                <button class="btn btn-info btn-lg invis-button"><span class="glyphicon glyphicon-eye-close"></span> Invisible</button>
+              </div>
+            </div>
+        </div>
+
+        <!-- Controls (Superpower Move Controls) -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Move Controls</h3>
+            </div>
+            <div class="panel-body">
+              <div class="text-center">
+                <button class="btn btn-default btn-lg up-button"><span class="glyphicon glyphicon-arrow-up"></span></button>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-default btn-lg left-button"><span class="glyphicon glyphicon-arrow-left"></span></button>
+                <button class="btn btn-default btn-lg down-button"><span class="glyphicon glyphicon-arrow-down"></span></button>
+                <button class="btn btn-default btn-lg right-button"><span class="glyphicon glyphicon-arrow-right"></span></button>
+              </div>
+              <br>
+              <div class="text-center">
+                <button class="btn btn-default btn-lg back-button"><span class="glyphicon glyphicon-comment"></span> What happens now determines what happens to the rest of the world!</button>
+              </div>
+            </div>
+          </div>
+
+
+      </div>
+
+      <!--Right Panel (BLK Panther Hero)-->
+      <div class="col-lg-6">
+
+        <!--BLK Panther Image-->
+        <img class="img blk-panther" src="https://ia.media-imdb.com/images/M/MV5BNTEwNTE5Njg0Nl5BMl5BanBnXkFtZTgwMDg2MDM5NDM@._V1_SX1500_CR0,0,1500,999_AL_.jpg" style="position:absolute; top:50px; left: 80px; z-index: -20; height: 300px">
+
+      </div>
+    </div>
+  </div>
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <!-- Link to my JavaScript File -->
+  <script src="script.js"></script>
+</body>
+
+</html>
