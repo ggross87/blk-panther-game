@@ -1,0 +1,26 @@
+body {
+  background-color: black;
+}
+h1 {
+
+  box-sizing: border-box;
+
+}
+b, strong {
+  color: #fff;
+}
+h4 {
+  color: black;
+}
+.jumbotron {
+  background-color: #91a1d8;
+}
+.btn-group-lg, .btn, .btn-lg{
+  background-color: #f4cb42;
+}
+.btn-default, .btn-primary, .btn-danger, .btn-info, .btn-warning {
+  color: #fff;
+}
+.panel-default, .panel-heading {
+  background-color: #91a1d8;
+}
